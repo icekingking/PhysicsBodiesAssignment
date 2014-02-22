@@ -7,8 +7,31 @@
 //
 
 #import "MyScene.h"
+@interface MyScene()
+@property SKSpriteNode * mySquare1;
+@property SKSpriteNode * mySquare2;
+@property SKSpriteNode * mySquare3;
+@property SKSpriteNode * mySquare4;
+@property SKSpriteNode * myShelf;
+@property SKPhysicsJoint * myRopeJoint1;
+@property SKPhysicsJoint * myRopeJoint2;
+@property SKPhysicsJoint * myRopeJoint3;
+
+@end
 
 @implementation MyScene
+
+-(void) activateJointRope{
+    _myRopeJoint1 = [SKPhysicsJointLimit jointWithBodyA:_mySquare1.physicsBody bodyB:_mySquare2.physicsBody anchorA:_mySquare1.position anchorB:_mySquare2.position];
+    _myRopeJoint2 = [SKPhysicsJointLimit jointWithBodyA:_mySquare2.physicsBody bodyB:_mySquare3.physicsBody anchorA:_mySquare2.position anchorB:_mySquare3.position];
+    _myRopeJoint3 = [SKPhysicsJointLimit jointWithBodyA:_mySquare3.physicsBody bodyB:_mySquare4.physicsBody anchorA:_mySquare3.position anchorB:_mySquare4.position];
+    
+    [self.physicsWorld addJoint:_myRopeJoint1];
+    [self.physicsWorld addJoint:_myRopeJoint2];
+    [self.physicsWorld addJoint:_myRopeJoint3];
+}
+
+
 
 -(id)initWithSize:(CGSize)size {    
     if (self = [super initWithSize:size]) {

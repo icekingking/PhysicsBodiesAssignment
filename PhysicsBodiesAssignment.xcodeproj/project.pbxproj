@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		46A6CC4318B82D1600BA84BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46A6CC4218B82D1600BA84BE /* Foundation.framework */; };
+		46A6CC4518B82D1600BA84BE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46A6CC4418B82D1600BA84BE /* CoreGraphics.framework */; };
+		46A6CC4718B82D1600BA84BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46A6CC4618B82D1600BA84BE /* UIKit.framework */; };
+		46A6CC4918B82D1600BA84BE /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46A6CC4818B82D1600BA84BE /* SpriteKit.framework */; };
+		46A6CC4F18B82D1600BA84BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 46A6CC4D18B82D1600BA84BE /* InfoPlist.strings */; };
+		46A6CC5118B82D1600BA84BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A6CC5018B82D1600BA84BE /* main.m */; };
+		46A6CC5518B82D1600BA84BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A6CC5418B82D1600BA84BE /* AppDelegate.m */; };
+		46A6CC5818B82D1600BA84BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46A6CC5618B82D1600BA84BE /* Main.storyboard */; };
+		46A6CC5B18B82D1600BA84BE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A6CC5A18B82D1600BA84BE /* ViewController.m */; };
+		46A6CC5E18B82D1600BA84BE /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A6CC5D18B82D1600BA84BE /* MyScene.m */; };
+		46A6CC6018B82D1600BA84BE /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 46A6CC5F18B82D1600BA84BE /* Spaceship.png */; };
+		46A6CC6218B82D1600BA84BE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46A6CC6118B82D1600BA84BE /* Images.xcassets */; };
+		46A6CC6918B82D1600BA84BE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46A6CC6818B82D1600BA84BE /* XCTest.framework */; };
+		46A6CC6A18B82D1600BA84BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46A6CC4218B82D1600BA84BE /* Foundation.framework */; };
+		46A6CC6B18B82D1600BA84BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46A6CC4618B82D1600BA84BE /* UIKit.framework */; };
+		46A6CC7318B82D1600BA84BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 46A6CC7118B82D1600BA84BE /* InfoPlist.strings */; };
+		46A6CC7518B82D1600BA84BE /* PhysicsBodiesAssignmentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A6CC7418B82D1600BA84BE /* PhysicsBodiesAssignmentTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		46A6CC6C18B82D1600BA84BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46A6CC3718B82D1600BA84BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46A6CC3E18B82D1600BA84BE;
+			remoteInfo = PhysicsBodiesAssignment;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		46A6CC3F18B82D1600BA84BE /* PhysicsBodiesAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhysicsBodiesAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46A6CC4218B82D1600BA84BE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		46A6CC4418B82D1600BA84BE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		46A6CC4618B82D1600BA84BE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		46A6CC4818B82D1600BA84BE /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		46A6CC4C18B82D1600BA84BE /* PhysicsBodiesAssignment-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PhysicsBodiesAssignment-Info.plist"; sourceTree = "<group>"; };
+		46A6CC4E18B82D1600BA84BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		46A6CC5018B82D1600BA84BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		46A6CC5218B82D1600BA84BE /* PhysicsBodiesAssignment-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PhysicsBodiesAssignment-Prefix.pch"; sourceTree = "<group>"; };
+		46A6CC5318B82D1600BA84BE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		46A6CC5418B82D1600BA84BE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		46A6CC5718B82D1600BA84BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		46A6CC5918B82D1600BA84BE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		46A6CC5A18B82D1600BA84BE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		46A6CC5C18B82D1600BA84BE /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		46A6CC5D18B82D1600BA84BE /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		46A6CC5F18B82D1600BA84BE /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		46A6CC6118B82D1600BA84BE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		46A6CC6718B82D1600BA84BE /* PhysicsBodiesAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhysicsBodiesAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		46A6CC6818B82D1600BA84BE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		46A6CC7018B82D1600BA84BE /* PhysicsBodiesAssignmentTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PhysicsBodiesAssignmentTests-Info.plist"; sourceTree = "<group>"; };
+		46A6CC7218B82D1600BA84BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		46A6CC7418B82D1600BA84BE /* PhysicsBodiesAssignmentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhysicsBodiesAssignmentTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46A6CC3C18B82D1600BA84BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46A6CC4518B82D1600BA84BE /* CoreGraphics.framework in Frameworks */,
+				46A6CC4718B82D1600BA84BE /* UIKit.framework in Frameworks */,
+				46A6CC4918B82D1600BA84BE /* SpriteKit.framework in Frameworks */,
+				46A6CC4318B82D1600BA84BE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46A6CC6418B82D1600BA84BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46A6CC6918B82D1600BA84BE /* XCTest.framework in Frameworks */,
+				46A6CC6B18B82D1600BA84BE /* UIKit.framework in Frameworks */,
+				46A6CC6A18B82D1600BA84BE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46A6CC3618B82D1600BA84BE = {
+			isa = PBXGroup;
+			children = (
+				46A6CC4A18B82D1600BA84BE /* PhysicsBodiesAssignment */,
+				46A6CC6E18B82D1600BA84BE /* PhysicsBodiesAssignmentTests */,
+				46A6CC4118B82D1600BA84BE /* Frameworks */,
+				46A6CC4018B82D1600BA84BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		46A6CC4018B82D1600BA84BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46A6CC3F18B82D1600BA84BE /* PhysicsBodiesAssignment.app */,
+				46A6CC6718B82D1600BA84BE /* PhysicsBodiesAssignmentTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46A6CC4118B82D1600BA84BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46A6CC4218B82D1600BA84BE /* Foundation.framework */,
+				46A6CC4418B82D1600BA84BE /* CoreGraphics.framework */,
+				46A6CC4618B82D1600BA84BE /* UIKit.framework */,
+				46A6CC4818B82D1600BA84BE /* SpriteKit.framework */,
+				46A6CC6818B82D1600BA84BE /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		46A6CC4A18B82D1600BA84BE /* PhysicsBodiesAssignment */ = {
+			isa = PBXGroup;
+			children = (
+				46A6CC5318B82D1600BA84BE /* AppDelegate.h */,
+				46A6CC5418B82D1600BA84BE /* AppDelegate.m */,
+				46A6CC5618B82D1600BA84BE /* Main.storyboard */,
+				46A6CC5918B82D1600BA84BE /* ViewController.h */,
+				46A6CC5A18B82D1600BA84BE /* ViewController.m */,
+				46A6CC5C18B82D1600BA84BE /* MyScene.h */,
+				46A6CC5D18B82D1600BA84BE /* MyScene.m */,
+				46A6CC5F18B82D1600BA84BE /* Spaceship.png */,
+				46A6CC6118B82D1600BA84BE /* Images.xcassets */,
+				46A6CC4B18B82D1600BA84BE /* Supporting Files */,
+			);
+			path = PhysicsBodiesAssignment;
+			sourceTree = "<group>";
+		};
+		46A6CC4B18B82D1600BA84BE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				46A6CC4C18B82D1600BA84BE /* PhysicsBodiesAssignment-Info.plist */,
+				46A6CC4D18B82D1600BA84BE /* InfoPlist.strings */,
+				46A6CC5018B82D1600BA84BE /* main.m */,
+				46A6CC5218B82D1600BA84BE /* PhysicsBodiesAssignment-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		46A6CC6E18B82D1600BA84BE /* PhysicsBodiesAssignmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				46A6CC7418B82D1600BA84BE /* PhysicsBodiesAssignmentTests.m */,
+				46A6CC6F18B82D1600BA84BE /* Supporting Files */,
+			);
+			path = PhysicsBodiesAssignmentTests;
+			sourceTree = "<group>";
+		};
+		46A6CC6F18B82D1600BA84BE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				46A6CC7018B82D1600BA84BE /* PhysicsBodiesAssignmentTests-Info.plist */,
+				46A6CC7118B82D1600BA84BE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46A6CC3E18B82D1600BA84BE /* PhysicsBodiesAssignment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46A6CC7818B82D1600BA84BE /* Build configuration list for PBXNativeTarget "PhysicsBodiesAssignment" */;
+			buildPhases = (
+				46A6CC3B18B82D1600BA84BE /* Sources */,
+				46A6CC3C18B82D1600BA84BE /* Frameworks */,
+				46A6CC3D18B82D1600BA84BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhysicsBodiesAssignment;
+			productName = PhysicsBodiesAssignment;
+			productReference = 46A6CC3F18B82D1600BA84BE /* PhysicsBodiesAssignment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		46A6CC6618B82D1600BA84BE /* PhysicsBodiesAssignmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46A6CC7B18B82D1600BA84BE /* Build configuration list for PBXNativeTarget "PhysicsBodiesAssignmentTests" */;
+			buildPhases = (
+				46A6CC6318B82D1600BA84BE /* Sources */,
+				46A6CC6418B82D1600BA84BE /* Frameworks */,
+				46A6CC6518B82D1600BA84BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46A6CC6D18B82D1600BA84BE /* PBXTargetDependency */,
+			);
+			name = PhysicsBodiesAssignmentTests;
+			productName = PhysicsBodiesAssignmentTests;
+			productReference = 46A6CC6718B82D1600BA84BE /* PhysicsBodiesAssignmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46A6CC3718B82D1600BA84BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = iceking;
+				TargetAttributes = {
+					46A6CC6618B82D1600BA84BE = {
+						TestTargetID = 46A6CC3E18B82D1600BA84BE;
+					};
+				};
+			};
+			buildConfigurationList = 46A6CC3A18B82D1600BA84BE /* Build configuration list for PBXProject "PhysicsBodiesAssignment" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 46A6CC3618B82D1600BA84BE;
+			productRefGroup = 46A6CC4018B82D1600BA84BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46A6CC3E18B82D1600BA84BE /* PhysicsBodiesAssignment */,
+				46A6CC6618B82D1600BA84BE /* PhysicsBodiesAssignmentTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46A6CC3D18B82D1600BA84BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46A6CC4F18B82D1600BA84BE /* InfoPlist.strings in Resources */,
+				46A6CC6218B82D1600BA84BE /* Images.xcassets in Resources */,
+				46A6CC6018B82D1600BA84BE /* Spaceship.png in Resources */,
+				46A6CC5818B82D1600BA84BE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46A6CC6518B82D1600BA84BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46A6CC7318B82D1600BA84BE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46A6CC3B18B82D1600BA84BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46A6CC5E18B82D1600BA84BE /* MyScene.m in Sources */,
+				46A6CC5B18B82D1600BA84BE /* ViewController.m in Sources */,
+				46A6CC5518B82D1600BA84BE /* AppDelegate.m in Sources */,
+				46A6CC5118B82D1600BA84BE /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46A6CC6318B82D1600BA84BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46A6CC7518B82D1600BA84BE /* PhysicsBodiesAssignmentTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		46A6CC6D18B82D1600BA84BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46A6CC3E18B82D1600BA84BE /* PhysicsBodiesAssignment */;
+			targetProxy = 46A6CC6C18B82D1600BA84BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		46A6CC4D18B82D1600BA84BE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46A6CC4E18B82D1600BA84BE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		46A6CC5618B82D1600BA84BE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46A6CC5718B82D1600BA84BE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		46A6CC7118B82D1600BA84BE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46A6CC7218B82D1600BA84BE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		46A6CC7618B82D1600BA84BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		46A6CC7718B82D1600BA84BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46A6CC7918B82D1600BA84BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhysicsBodiesAssignment/PhysicsBodiesAssignment-Prefix.pch";
+				INFOPLIST_FILE = "PhysicsBodiesAssignment/PhysicsBodiesAssignment-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		46A6CC7A18B82D1600BA84BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhysicsBodiesAssignment/PhysicsBodiesAssignment-Prefix.pch";
+				INFOPLIST_FILE = "PhysicsBodiesAssignment/PhysicsBodiesAssignment-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		46A6CC7C18B82D1600BA84BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PhysicsBodiesAssignment.app/PhysicsBodiesAssignment";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhysicsBodiesAssignment/PhysicsBodiesAssignment-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PhysicsBodiesAssignmentTests/PhysicsBodiesAssignmentTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		46A6CC7D18B82D1600BA84BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PhysicsBodiesAssignment.app/PhysicsBodiesAssignment";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhysicsBodiesAssignment/PhysicsBodiesAssignment-Prefix.pch";
+				INFOPLIST_FILE = "PhysicsBodiesAssignmentTests/PhysicsBodiesAssignmentTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46A6CC3A18B82D1600BA84BE /* Build configuration list for PBXProject "PhysicsBodiesAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46A6CC7618B82D1600BA84BE /* Debug */,
+				46A6CC7718B82D1600BA84BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46A6CC7818B82D1600BA84BE /* Build configuration list for PBXNativeTarget "PhysicsBodiesAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46A6CC7918B82D1600BA84BE /* Debug */,
+				46A6CC7A18B82D1600BA84BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		46A6CC7B18B82D1600BA84BE /* Build configuration list for PBXNativeTarget "PhysicsBodiesAssignmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46A6CC7C18B82D1600BA84BE /* Debug */,
+				46A6CC7D18B82D1600BA84BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46A6CC3718B82D1600BA84BE /* Project object */;
+}
